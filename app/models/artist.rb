@@ -12,8 +12,5 @@ class Artist < ActiveRecord::Base
 
   def genre_count
     self.songs.length
-    drake = Artist.create(name: "Drake")
-    binding.pry
-    self.artist = drake
   end
 end
